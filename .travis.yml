@@ -1,9 +1,9 @@
 language: ruby
-    rvm:
-        - 2.2.1
-    env:
-        - DB=test/integration/books.sqlite
-    before_script:
-        - touch $DB && ruby test/integration/setup_datastores.rb
-    script:
-        - rspec test/integration/rspec_isbn_search.rb
+rvm:
+  - 2.2
+env:
+ - DB=test/integration/books.sqlite
+before_script:
+ - touch $DB && ruby test/integration/setup_datastores.rb
+script:
+ - rspec test/integration/rspec_isbn_search.rb
