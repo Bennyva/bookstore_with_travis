@@ -5,3 +5,4 @@ source :rubygems
     gem "logger"
     gem "json" 
     gem "rspec"
+    gem "replace_gem"
